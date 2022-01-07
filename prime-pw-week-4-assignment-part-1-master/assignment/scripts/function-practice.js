@@ -81,8 +81,13 @@ console.log("is sunflower a plant? Answer is :", find("sunflower", plants));
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
-}
+ for(let i =0; i<1; i++){
+  if(string[i] === letter){
+    return true;
+  }
+ }
+ return false;
+ }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
