@@ -61,10 +61,20 @@ console.log("last in the array should be 2 : " ,getLast());
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array ){
 
-}
+  let plants = ["grass", "tree", "sunflower", "aloe"];
+  let numbers = [0, 1, 4, 5, 9, 10]
 
+  function find( value, array ){
+    for(let i = 0; i <array.length; i++){
+      if (array[i] === value){
+        return true;
+      }
+    }
+      return false;
+    }
+console.log("is 5 a number? Answer is :", find(5, numbers));
+console.log("is sunflower a plant? Answer is :", find("sunflower", plants));
 // ----------------------
 // Stretch Goals
 // ----------------------
